@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">YAY! It's BOGO</h1>
+
+      <div class="card" onclick="toggleCard(1)">
+        <div class="card-header">
+          <div class="left-section">
+            <input type="radio" name="unit" id="unit1" />
+            <div class="text-content">
+              <div class="top-row">
+                <label for="unit1">1 Unit</label>
+                <span class="badge">10% Off</span>
+              </div>
+              <span class="sub-text">Standard Price</span>
+            </div>
+          </div>
+          <div class="pricing">
+            <span class="discounted-price">$10.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </div>
+        </div>
+        <div class="card-content" id="content1">
+          <div class="dropdowns">
+            <span>#1</span>
+            <div class="sizes">
+              <label for="size1">Size:</label>
+              <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div>
+              <label for="color1">Color:</label>
+              <select id="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdowns">
+            <span>#2</span>
+            <div>
+              <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div>
+              <select id="color1">
+                <option value="Black">Color</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card popular" onclick="toggleCard(2)">
+        <div class="card-header">
+          <div class="popular-badge">MOST POPULAR</div>
+          <div class="title">
+            <input type="radio" name="unit" id="unit2" />
+            <label for="unit2">2 Unit</label>
+            <span class="badge">20% Off</span>
+          </div>
+          <div class="pricing">
+            <span class="discounted-price">$18.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </div>
+        </div>
+        <div class="card-content" id="content2">
+          <div class="dropdowns">
+            <span>#1</span>
+            <div class="sizes">
+              <label for="size1">Size:</label>
+              <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div>
+              <label for="color1">Color:</label>
+              <select id="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdowns">
+            <span>#2</span>
+            <div>
+              <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div>
+              <select id="color1">
+                <option value="Black">Color</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(3)">
+        <div class="card-header">
+          <div class="title">
+            <input type="radio" name="unit" id="unit3" />
+            <label for="unit3">3 Unit</label>
+            <span class="badge">30% Off</span>
+          </div>
+          <div class="pricing">
+            <span class="discounted-price">$24.00 USD</span>
+            <span class="original-price">$36.00 USD</span>
+          </div>
+        </div>
+        <div class="card-content" id="content3">
+          <div class="dropdowns">
+            <span>#1</span>
+            <div class="sizes">
+              <label for="size1">Size:</label>
+              <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div>
+              <label for="color1">Color:</label>
+              <select id="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdowns">
+            <span>#2</span>
+            <div>
+              <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div>
+              <select id="color1">
+                <option value="Black">Color</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <div class="free-delivery">Free Delivery</div>
+        <div class="total-value">Total: $0.00</div>
+      </div>
+
+      <button class="add-to-cart">
+        <span class="icon">+</span> Add to Cart
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
