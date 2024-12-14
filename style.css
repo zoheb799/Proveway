@@ -12,11 +12,38 @@ body {
 }
 
 input[type="radio"] {
-  accent-color: #f48fb1;
-  color: #fff;
-  width: 18px;
-  height: 18px;
-}
+    appearance: none; 
+    width: 14px;
+    height: 14px;
+    border: 0.9px solid #c8c8c8; 
+    border-radius: 50%; 
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #fff;
+    border: 0.9px solid #f48fb1; 
+  }
+  
+  input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #f48fb1;
+    border: 0.9px solid #f48fb1; 
+    border-radius: 50%;
+  }
+  
 
 .text-content {
   display: flex;
@@ -73,7 +100,7 @@ label {
   text-decoration-skip-ink: none;
   text-align: center;
   font-size: 1.5rem;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
 .header::before,
@@ -81,10 +108,10 @@ label {
   content: "";
   display: inline-block;
   width: 20%;
-  height: 1px;
+  height: 1.5px;
   background-color: #c8c8c8;
   vertical-align: middle;
-  margin: 0 0.5em;
+  margin: 0 12px;
 }
 
 .card {
@@ -174,7 +201,7 @@ label {
 .dropdowns span {
   margin-left: 0.9rem;
   margin-right: -0.7rem;
-  margin-top: 2%;
+  margin-top: 1.5%;
   font-size: 12px;
   font-weight: 400;
   line-height: 10.94px;
@@ -190,7 +217,7 @@ label {
 
 .dropdowns label {
   font-size: 0.9rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
   font-size: 12px;
   font-weight: 400;
   line-height: 12.03px;
@@ -269,6 +296,8 @@ label {
 .free-delivery {
   color: #f06292;
   text-align: center;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .add-to-cart {
@@ -305,8 +334,8 @@ label {
 
 .total-value {
   color: #333;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 16.94px;
   text-align: left;
   text-underline-position: from-font;
